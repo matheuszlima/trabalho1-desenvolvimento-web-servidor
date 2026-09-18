@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Sistema de Clínica/Consultório
 
 Trabalho 1 - Desenvolvimento Web Servidor - UTFPR
