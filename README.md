@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Sistema de Clínica/Consultório
 
 Trabalho 1 - Desenvolvimento Web Servidor - UTFPR
@@ -17,3 +18,6 @@ profissionais e agendamento de consultas.
 
 ## Como instalar
 (vamos completar essa parte quando o projeto estiver rodando)
+=======
+# trabalho1-desenvolvimento-web-servidor
+>>>>>>> f289631eccce37f52e99469d1c8aadc926d15c36
