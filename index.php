@@ -3,10 +3,12 @@ session_start();
 
 $acao = $_GET['acao'] ?? 'login';
 
-$controlador = "controllers/" . $acao . ".controller.php";
+$acoesPermitidas = ['login', 'inicio', 'logout'];
 
-if (file_exists($controlador)) {
-    require $controlador;
-} else {
-    echo "Erro '$acao' ";
+if (!in_array($acao, $acoesPermitidas)) {
+    $acao = 'login';
 }
+
+$controlador = __DIR__ . "/controllers/" . $acao . ".controller.php";
+
+require $controlador;
