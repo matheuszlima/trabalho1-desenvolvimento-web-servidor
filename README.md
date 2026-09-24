@@ -19,7 +19,7 @@ Sistema de gestão de clínica/consultório com cadastro de pacientes, profissio
 2. Copie a pasta "trabalho1-desenvolvimento-web-servidor" para C:\xampp\htdocs
 3. Inicie o Apache e o MySQL no XAMPP
 4. Acesse http://localhost/phpmyadmin e importe o arquivo database/schema.sql
-5. Acesse http://localhost/trabalho1-desenvolvimento-web-servidor
+5. Acesse http://localhost/trabalho1-desenvolvimento-web-servidor/
 
 
 ## Login
