@@ -1,39 +1,39 @@
 # Sistema de Clínica/Consultório
 
-Trabalho 1 da disciplina de Desenvolvimento Web Servidor da UTFPR.
+Trabalho 1 - Desenvolvimento Web Servidor - UTFPR
 
 ## Integrantes
-
 - Breno Gonzalez Vieira
 - Matheus de Lima Santos
 
 ## Sobre o projeto
-
-Sistema simples para ajudar no controle de uma clínica. O projeto terá cadastro de pacientes,
-profissionais e consultas.
+Sistema de gestão de clínica/consultório com cadastro de pacientes, profissionais e agendamento de consultas. Com autenticação via sessão
 
 ## Tecnologias
-
 - PHP 8+
-- MySQL ou MariaDB
-- Bootstrap 5
+- MySQL (PDO)
+- Bootstrap 5 (via CDN)
 
-## Parte 1 - Login
+## Como instalar
+1. Instale o XAMPP
+2. Copie a pasta "trabalho1-desenvolvimento-web-servidor" para C:\xampp\htdocs
+3. Inicie o Apache e o MySQL no XAMPP
+4. Acesse http://localhost/phpmyadmin e importe o arquivo database/schema.sql
+5. Acesse http://localhost/trabalho1-desenvolvimento-web-servidor
 
-Nesta primeira parte foi criado o login usando sessão do PHP. Também foi criada uma página inicial
-que só pode ser acessada depois do login.
 
-Para testar:
+## Login
+- E-mail: admin@gmail.com
+- Senha: 123456
 
-1. Importe o arquivo `banco.sql` no phpMyAdmin.
-2. Confira os dados do banco no arquivo `config.php`.
-3. Coloque a pasta do projeto dentro da pasta `htdocs` do XAMPP.
-4. Inicie o Apache e o MySQL.
-5. Abra o projeto no navegador.
+## Particularidadess
+- O sistema usa Bootstrap pela internet (CDN), então precisa de conexão para a página fica com o visual correto
+- O CPF é salvo apenas com números, os pontos e o traço são removidos
 
-Usuário de teste:
 
-- E-mail: `admin@clinica.com`
-- Senha: `123456`
+## Problemas conhecidos
+- Não há limite de tamanho validado nos campos de texto
 
-Os cadastros do sistema serão feitos nas próximas partes.
+## Distribuição de tarefas
+- Breno: (estrutura inicial, README, conexão com o banco de dados (config.php), tabelas do banco (schema.sql), models (a parte que salva e busca os dados no banco))
+- Matheus: (login e o logout do sistema, controllers (a parte que recebe os dados dos formulários e confere se estão certos), telas (views) com Bootstrap,)
